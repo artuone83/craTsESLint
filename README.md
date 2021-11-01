@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Setup Environment
 
-`npm install`
+`yarn` or `yarn install`
 
 ## Setup ESLint
 
