@@ -1,0 +1,47 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the document ation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start dev environment v3",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "dev server"
+      },
+      "dependsOn": ["jest test", "start devServer"],
+      "dependsOrder": "sequence"
+    },
+    {
+      "label": "start devServer",
+      "type": "shell",
+      "command": "npm start",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "dev server"
+      }
+    },
+    {
+      "label": "jest test",
+      "type": "shell",
+      "command": "npm test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "dev server"
+      }
+    },
+    {
+      "label": "shell echo",
+      "type": "shell",
+      "command": "echo 'Hello Task number 3'",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "dev server"
+      }
+    }
+  ]
+}
